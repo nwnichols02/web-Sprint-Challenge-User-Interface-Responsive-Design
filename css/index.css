@@ -72,6 +72,73 @@ section, footer{
     width: 80%;
     margin: 0 auto;
 }
+/* Header Styles */
+
+header nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    border: 2px solid black;
+    width: 100%;
+}
+
+.logo {
+    margin-left:10%;
+    margin-top: 1%;
+}
+
+header img {
+    width: 40%;
+    /* border: 2px solid black; */
+
+}
+
+.links {
+    margin-right: 10%;
+    width:100%;
+    padding: 2%;
+    /* align-items: flex-start; */
+    /* align-content: center; */
+    display: flex;
+    justify-content: space-evenly;
+    /* color: black; */
+    /* width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    /* align-content: space-evenly; */
+    /* text-decoration: none; */
+    border: 1px solid green; */
+}
+
+nav a{
+    /* display: inline-flex; */
+    text-decoration: none;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-content: space-between;
+    align-items: flex-start;
+    border: 2px solid black;
+    /* justify-content: center; */
+    /* text-align: ; */ 
+    /* width: 60%; */
+    /* color: black; */
+}
+
+.heading {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+
 
 /*Top Section Styles*/
 
@@ -88,11 +155,13 @@ section, footer{
     width: 35%;
     padding: 0 1%;
     padding-bottom: 4%;  
+    /* text-align: center; */
 }
 
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -107,12 +176,17 @@ section, footer{
 
 .middle-content .boxes .box {
     background: black;
-    margin: 4% 0;
+    margin: 2% 0;
     color: white;
     display: flex;
     align-items: center;
+    width: 130px;
+    height: 120px;
     justify-content: center;
+
 }
+
+.middle-content .boxes {}
 
 /*Bottom Section Styles*/
 .bottom-content {
