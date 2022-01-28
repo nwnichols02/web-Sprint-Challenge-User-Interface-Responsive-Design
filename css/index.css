@@ -3,212 +3,387 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html{
-    font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height:1.5;
-    font-size:1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+  font-family: "Rubik", sans-serif;
 }
-section, footer{
-    padding:4% 0;
+section,
+footer {
+  padding: 4% 0;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 /* Header Styles */
 
 header nav {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  width: 97%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 
-header {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    border: 2px solid black;
-    width: 100%;
+header nav .links {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  margin-top: 1%;
 }
 
 .logo {
-    margin-left:10%;
-    margin-top: 1%;
+  margin-left: 10%;
+  margin-top: 1%;
 }
 
 header img {
-    width: 40%;
-    /* border: 2px solid black; */
-
+  width: 20%;
+  /* border: 2px solid black; */
 }
 
 .links {
-    margin-right: 10%;
-    width:100%;
-    padding: 2%;
-    /* align-items: flex-start; */
-    /* align-content: center; */
-    display: flex;
-    justify-content: space-evenly;
-    /* color: black; */
-    /* width: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    /* align-content: space-evenly; */
-    /* text-decoration: none; */
-    border: 1px solid green; */
+  display: flex;
+  justify-content: center;
 }
 
-nav a{
-    /* display: inline-flex; */
-    text-decoration: none;
-    justify-content: space-between; 
-    flex-direction: row;
-    align-content: space-between;
-    align-items: flex-start;
-    border: 2px solid black;
-    /* justify-content: center; */
-    /* text-align: ; */ 
-    /* width: 60%; */
-    /* color: black; */
+.links a {
+  /* margin: 1%; */
+  justify-content: space-evenly;
+  align-items: space-between;
+  align-content: space-between;
+  border: none;
+
+  /* width: 100%; */
+  /* padding-right: 10%; */
+  text-decoration: none;
+  color: black;
 }
-
-.heading {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-}
-
-
 
 /*Top Section Styles*/
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
+  text-align: justify;
 }
 
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
-    /* text-align: center; */
+  width: 35%;
+  padding: 0 1%;
+  padding-bottom: 4%;
+  /* text-align: center; */
+}
+
+.jumbo {
+  width: 100%;
 }
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .middle-content .boxes .box {
-    background: black;
-    margin: 2% 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    width: 130px;
-    height: 120px;
-    justify-content: center;
-
+  background: black;
+  margin: 2% 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  height: 120px;
+  justify-content: center;
 }
-
-.middle-content .boxes {}
+#box1 {
+  background-color: teal;
+}
+#box2 {
+  background-color: gold;
+}
+#box3 {
+  background-color: cadetblue;
+}
+#box4 {
+  background-color: coral;
+}
+#box5 {
+  background-color: crimson;
+}
+#box6 {
+  background-color: forestgreen;
+}
+#box7 {
+  background-color: darkorchid;
+}
+#box8 {
+  background-color: hotpink;
+}
+#box9 {
+  background-color: indigo;
+}
+#box10 {
+  background-color: dodgerblue;
+}
 
 /*Bottom Section Styles*/
 .bottom-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bottom-content .text-container {
-    width:25%;
+  width: 25%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 /*Footer Styles*/
+
 footer {
-    width: 100%;
-    background-color: #ff4b00;
+  width: 100%;
+  background-color: #ff4b00;
+}
+
+footer nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 8vh;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
 }
 
 /*About Page Styles*/
+.aboutwhole {
+  width: 80%;
+  margin: 0 auto;
+}
 
+.abouttop {
+  width: 102.5%;
+  border-bottom: 2px solid #ff4b00;
+  padding-top: 0%;
+}
+
+.container-about-page {
+  /* margin-top: 0%; */
+}
+
+.containerstrategy {
+  border-bottom: 2px solid #ff4b00;
+  width: 47.5%;
+  margin-top: 3%;
+}
+
+.containerstrategy p {
+  margin-bottom: 10%;
+}
+.containerwork p {
+  margin-bottom: 10%;
+}
+.containerplaces p {
+  /* margin-top: 5%; */
+  margin-bottom: 10%;
+}
+.containercollab p {
+  margin-bottom: 10%;
+}
+
+.containerwork {
+  border-bottom: 2px solid #ff4b00;
+  width: 47.5%;
+  margin-top: 3%;
+}
+.containerplaces {
+  border-bottom: 2px solid #ff4b00;
+  width: 47.5%;
+  margin-top: 8%;
+}
+.containercollab {
+  border-bottom: 2px solid #ff4b00;
+  width: 47.5%;
+  margin-top: 8%;
+}
+
+.wrap4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.containertogether {
+  width: 100%;
+  margin: 0 auto;
+}
 
 /*Responsive Styles*/
