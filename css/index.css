@@ -463,8 +463,40 @@ header img {
 /*Responsive Styles*/
 
 @media (max-width:500px) {
+
+  /* Home */
+header nav{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 35%;
+  margin-left: 0%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.middle-content h2 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.middle-content .boxes {
+  /* /* position: fixed; */
+  flex-wrap: wrap; */
+}
+
+.middle-content .boxes .box {
+  flex: 0 1 calc(50% - 5%);
+}
+
+
+/* About */
+
 .aboutwhole {
-    width: 100%;
+    width: 90%;
     /* margin: 0 0; */
 }
 
@@ -473,22 +505,79 @@ header img {
 }
 
 .abouttop  #about {
-    width: 50%;
     display: flex;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 3px solid green;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-#about {
+.abouttop p {
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+/* Middle Content 500px */
+
+.wrap4 {
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrap4 h2 {
 
 }
 
+.containerstrategy {
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.containerwork {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 8%;
+}
+.containerplaces {
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.containercollab {
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.containerstrategy h2 {
+  display: flex;
+  justify-content: center;
+}
+.containerwork h2 {
+  display: flex;
+  justify-content: center;
+}
+.containerplaces h2 {
+  display: flex;
+  justify-content: center;
+}
+.containercollab h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.containertogether h2 {
+  display: flex;
+  justify-content: center;
+}
 
 
+/* Footer */
 
-
+footer nav{
+  flex-direction: column;
+  align-content: space-between;
+  height: 20vh;
+}
 
 
 }
