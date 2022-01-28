@@ -3,138 +3,639 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+/* ALL Page Styling */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html{
-    font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height:1.5;
-    font-size:1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+  font-family: "Rubik", sans-serif;
 }
-section, footer{
-    padding:4% 0;
+section,
+footer {
+  padding: 4% 0;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
+/* Home */
+/* Header Styles */
+
+header nav {
+  display: flex;
+  width: 97%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+header nav .links {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  margin-top: 1%;
+}
+
+.logo {
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+header img {
+  width: 20%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  justify-content: space-evenly;
+  align-items: space-between;
+  align-content: space-between;
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* Home */
 /*Top Section Styles*/
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
+  text-align: left;
 }
 
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+  width: 46%;
+  padding: 0 1%;
+  padding-bottom: 4%;
+  margin-top: 6%;
 }
 
+.top-content .text-container h2 {
+  text-align: center;
+}
+
+.jumbo {
+  width: 100%;
+}
+
+/* Home */
 /*Middle Section Styles*/
+
+
 .middle-content {
-    margin-bottom: 4%;
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
-    margin-bottom: 0;
+  margin-bottom: 0%;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
 }
 
 .middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: black;
+  margin: 2% 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  height: 120px;
+  justify-content: center;
+  flex: 0 1 calc(20% - 3%);
 }
 
+#box1 {
+  background-color: teal;
+}
+
+#box2 {
+  background-color: gold;
+}
+
+#box3 {
+  background-color: cadetblue;
+}
+
+#box4 {
+  background-color: coral;
+}
+
+#box5 {
+  background-color: crimson;
+}
+
+#box6 {
+  background-color: forestgreen;
+}
+
+#box7 {
+  background-color: darkorchid;
+}
+
+#box8 {
+  background-color: hotpink;
+}
+
+#box9 {
+  background-color: indigo;
+}
+
+#box10 {
+  background-color: dodgerblue;
+}
+
+/* Home */
 /*Bottom Section Styles*/
+
 .bottom-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bottom-content .text-container {
-    width:25%;
+  width: 25%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
+/* Home */
 /*Footer Styles*/
+
 footer {
-    width: 100%;
-    background-color: #ff4b00;
+  width: 100%;
+  background-color: #ff4b00;
+}
+
+footer nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 8vh;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
 }
 
 /*About Page Styles*/
 
+.aboutwhole {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* About */
+/* header */
+
+header nav {
+  display: flex;
+  width: 97%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+header nav .links {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  margin-top: 1%;
+}
+
+.logo {
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+header img {
+  width: 20%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  justify-content: space-evenly;
+  align-items: space-between;
+  align-content: space-between;
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+.abouttop {
+  width: 100%;
+  border-bottom: 2px solid #ff4b00;
+  padding-top: 0%;
+}
+
+.abouttop img {
+  width: 100%;
+}
+
+/* About */
+/* Middle Boxes */
+
+.containerstrategy,.containerwork, .containerplaces, .containercollab {
+  border-bottom: 2px solid #ff4b00;
+  width: 47.5%;
+  margin-top: 3%;
+}
+
+.containerstrategy p, .containerwork p, .containerplaces p, .containercollab p {
+  margin-bottom: 10%;
+}
+
+.containerstrategy img, .containerwork img, .containerplaces img, .containercollab img {
+  width: 100%;
+}
+
+.wrap4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.containertogether {
+  width: 100%;
+  margin: 0 auto;
+}
 
 /*Responsive Styles*/
+
+@media (max-width:500px) {
+
+
+  /* Home */
+  /* Header */
+
+
+.container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+header nav{
+  width: 97%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 5%;
+}
+
+.logo {
+  width: 45%;
+  margin-left: 0%;
+  margin-top: 8%;
+  margin-bottom: 3%;
+}
+
+
+/* Home */
+/* Top content */
+
+
+.top-content  {
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-content .text-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-content .text-container h2{
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.top-content .text-container p {
+  text-align: left;
+  margin-bottom: 8%;
+}
+
+.jumbo {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+
+/* Home */
+/* Middle Content */
+
+
+.middle-content {
+  width: 90%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.middle-content h2 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.middle-content .boxes {
+  flex-wrap: wrap; */
+}
+
+.middle-content .boxes .box {
+  margin: 5% 0;
+  flex: 0 1 calc(50% - 5%);
+}
+
+
+/* Home */
+/* Bottom content */
+
+
+.bottom-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-content .text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-content .text-container h2 {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.bottom-content .text-container p {
+  text-align: left;
+  margin-bottom: 8%;
+}
+
+
+/* About */
+/* Top Content */
+
+
+.aboutwhole {
+    width: 90%;
+}
+
+.abouttop h2 #about{
+    border: 2px solid red;
+}
+
+.abouttop  #about {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.abouttop p {
+  margin-bottom: 5%;
+  letter-spacing: inherit;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/* About */
+/* Middle Content 500px */
+
+
+.wrap4 {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8%;
+}
+
+
+.wrap4 h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.containerstrategy, .containerwork, .containerplaces, .containercollab {
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.containerstrategy p, .containerwork p, .containerplaces p, .containercollab p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.containertogether h2 {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 8%;
+}
+
+.containertogether p {
+  text-align: left;
+  margin-bottom: 7%;
+}
+
+
+/* About */
+/* Footer */
+
+
+footer nav{
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0%;
+  height: 20vh;
+}
+
+}
